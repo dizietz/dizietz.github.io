@@ -20,7 +20,7 @@ var tleLine1 = '1 25544U 98067A   19156.50900463  .00003075  00000-0  59442-4 0 
 var satrec = satellite.twoline2satrec(tleLine1, tleLine2);
 
 //  Propagate satellite using time since epoch (in minutes).
-var positionAndVelocity = satellite.sgp4(satrec, timeSinceTleEpochMinutes);
+//var positionAndVelocity = satellite.sgp4(satrec, timeSinceTleEpochMinutes);
 
 //  Or you can use a JavaScript Date
 var positionAndVelocity = satellite.propagate(satrec, new Date());
