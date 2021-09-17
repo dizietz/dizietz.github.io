@@ -45,7 +45,7 @@ var gmst = satellite.gstime(new Date());
 var positionEcf   = satellite.eciToEcf(positionEci, gmst),
     observerEcf   = satellite.geodeticToEcf(observerGd),
     positionGd    = satellite.eciToGeodetic(positionEci, gmst),
-    lookAngles    = satellite.ecfToLookAngles(observerGd, positionEcf),
+    lookAngles    = satellite.ecfToLookAngles(observerGd, positionEcf);
     //dopplerFactor = satellite.dopplerFactor(observerCoordsEcf, positionEcf, velocityEcf);
 
 // The coordinates are all stored in key-value pairs.
